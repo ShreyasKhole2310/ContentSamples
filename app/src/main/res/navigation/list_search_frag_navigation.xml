@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/contentListFragment"
+    android:id="@+id/list_search_frag_navigation">
+
+    <fragment
+        android:label="MainFragment"
+        android:id="@+id/contentListFragment"
+        android:name="com.example.diagnaltest.view.ContentListFragment"
+        tools:layout="@layout/fragment_content_list">
+
+        <action
+            android:id="@+id/action_contentListFragment_to_contentSearchFragment"
+            app:destination="@id/contentSearchFragment" />
+    </fragment>
+    <fragment
+        android:label="SearchFragment"
+        android:id="@+id/contentSearchFragment"
+        android:name="com.example.diagnaltest.view.ContentSearchFragment"
+        tools:layout="@layout/fragment_content_list">
+    </fragment>
+</navigation>
